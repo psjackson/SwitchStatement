@@ -38,7 +38,7 @@ public class Main {
                 break;
             default: numberString = "invalid";
         }
-        //display to user the number they entered and its corresponding italian number, else display invalid input.
+        //if numberString was invalid show as error message else show the number they entered and its corresponding italian number.
         if (numberString.equals("invalid")) {
             System.out.println("That was not a number between 1 and 10 inclusive.");
         }
