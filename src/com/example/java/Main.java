@@ -39,11 +39,11 @@ public class Main {
             default: numberString = "invalid";
         }
         //display to user the number they entered and its corresponding italian number, else display invalid input.
-        if (numberString != "invalid") {
-            System.out.println("The number " + number + " is " + numberString + " in Italian.");
+        if (numberString.equals("invalid")) {
+            System.out.println("That was not a number between 1 and 10 inclusive.");
         }
         else {
-            System.out.println("That was not a number between 1 and 10 inclusive.");
+            System.out.println("The number " + number + " is " + numberString + " in Italian.");
         }
     }
 }
